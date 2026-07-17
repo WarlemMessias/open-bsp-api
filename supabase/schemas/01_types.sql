@@ -7,7 +7,8 @@ create type public.service as enum (
   'slack',
   'discord',
   'teams',
-  'whatsapp-web'
+  'whatsapp-web',
+  'uazapi'
 );
 
 create type public.webhook_operation as enum ('insert', 'update');

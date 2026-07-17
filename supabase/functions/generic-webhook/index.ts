@@ -67,6 +67,9 @@ function connectorToken(service: string): string | null {
   if (service === "whatsapp-web") {
     return Deno.env.get("WHATSAPP_WEB_TOKEN") ?? "";
   }
+  if (service === "uazapi") {
+    return Deno.env.get("UAZAPI_TOKEN") ?? "";
+  }
   return null;
 }
 

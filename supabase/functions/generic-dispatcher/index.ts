@@ -55,6 +55,12 @@ function connectorConfig(
       token: Deno.env.get("WHATSAPP_WEB_TOKEN") ?? "",
     };
   }
+  if (service === "uazapi") {
+    return {
+      url: Deno.env.get("UAZAPI_URL") ?? "",
+      token: Deno.env.get("UAZAPI_TOKEN") ?? "",
+    };
+  }
   return null;
 }
 
